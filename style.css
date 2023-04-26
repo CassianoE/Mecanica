@@ -1,0 +1,73 @@
+/* Estilos CSS para o cabeçalho */
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Estilos CSS para os botões */
+.botao-containerhome{
+    display: flex;
+    flex-direction: column; /* adicionado para empilhar os botões verticalmente */
+    align-items: center;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding: 20px;
+    width: 500px; /* largura fixa para o container dos botões */
+    margin-top: 150px; /*para ficar a baixo do header*/
+    margin-left: 516px; /* para ficar centralizado horizontalmente*/
+}
+
+.botao-home {
+
+    width: 100%;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 0;
+    cursor: pointer;
+    padding: 10px 20px;
+  }
+
+.tresbotoes{
+    margin-top: 10px; /* adicionando margem acima dos 3 botões */
+    flex-direction: row; /* colocando os 3 botões na mesma linha */
+    color: white;
+    padding: 15px 0; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.tresbotoes a {
+    border: none;
+    color: white;
+    padding: 10px 20px; /* reduzindo o tamanho do quadrado preto */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 5px; /* adicionando margem entre os botões */
+    cursor: pointer;
+}
+.botao-saibamais{
+    color: white;
+    padding: 15px 0; /* removido o padding lateral */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

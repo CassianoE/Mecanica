@@ -1,3 +1,9 @@
+body{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 /* Estilos CSS para o cabeçalho */
 header {
     background-color: #000000;
@@ -152,27 +158,43 @@ header {
 
     
     .cards-container2 {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 20px;
-      }
+      margin-top: 150px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; /* alinha as colunas ao centro */
+    }
+    
+    .colunadecards1, .colunadecards2 {
+      padding-left: 250px;
+      flex-basis: calc(50% - 200px);
+    }
+    .colunadecards1{
+      padding-left: 10px;
+    }
       
       .card2 {
+        height: 150px; /* ou outro valor que você queira */
         width: 30%;
         text-align: center;
         margin: 0 15px 20px;
+        display: flex;
+        align-items: center; /* centraliza os elementos verticalmente */
       }
       
       .cards-titulo2 {
         font-family: 'Roboto', sans-serif;
         font-size: 64px;
         text-align: center;
-        margin-bottom: 100px;
+        margin-top: 20px;
+        flex-basis: 100%;
+        margin-bottom: 10px;
       }
       
       .card2 img {
+        max-width: 50%; /* ou outro valor que você queira */
         height: 100px;
         width: 100px;
+        margin-right: 20px; /* cria uma margem à direita da imagem */
       }
       
       .linha-de-cards2 {
@@ -180,3 +202,34 @@ header {
         justify-content: space-between;
         margin-bottom: 20px;
       }
+
+      .colunadecards1 {
+        margin-left: 10px;
+      }
+
+      .card-content {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .card-content h2 {
+        white-space: nowrap;
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        margin: -50px 0 0; /* adicionando valor negativo para margin-top */
+        font-size: 36px;
+      }
+
+      .colunadecards2 .card2:nth-child(3) .card-content h2 {
+        margin-top: -10px;
+      }
+
+      .card-content p {
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        text-align: left;
+        white-space: normal;
+  overflow: hidden;
+      }
+
+      
